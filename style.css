@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: Arial;
+  color: white;
+}
+
+.app {
+  width: 340px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(18px);
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.dropdown {
+  flex: 1;
+  position: relative;
+  cursor: pointer;
+}
+
+.selected {
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.list {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  margin-top: 5px;
+  z-index: 10;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.item:hover {
+  background: #eee;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #00c6ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#colorBox {
+  width: 150px;
+  height: 150px;
+  margin: 15px auto;
+  border-radius: 15px;
+}

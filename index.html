@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Mixer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>Color Mixer</h1>
+  <p class="sub">Select colors and mix them</p>
+
+  <div class="controls">
+
+    <div class="dropdown" onclick="toggleList(1)">
+      <div class="selected" id="selected1">Select Color</div>
+      <div class="list" id="list1"></div>
+    </div>
+
+    <div class="dropdown" onclick="toggleList(2)">
+      <div class="selected" id="selected2">Select Color</div>
+      <div class="list" id="list2"></div>
+    </div>
+
+  </div>
+
+  <button onclick="mixColors()">Mix Colors</button>
+
+  <div class="result">
+    <div id="colorBox"></div>
+    <h2 id="textResult"></h2>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
